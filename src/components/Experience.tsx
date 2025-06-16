@@ -10,6 +10,7 @@ const Experience = () => {
       type: "Part-time",
       period: "Aug 2024 - Dec 2024 · 5 mos",
       location: "Tucson, Arizona, United States · On-site",
+      color: "border-blue-500",
       achievements: [
         "Collaborated with the professor to design the syllabus and prepare comprehensive lecture notes for the graduate course Special Topics in AI and Digital Media, attended by 25 students.",
         "Developed, administered, and graded exams and assignments to evaluate student performance.",
@@ -21,6 +22,7 @@ const Experience = () => {
       title: "AI/ML Immersive Labs",
       company: "Tucson, United States",
       period: "May 2024 – Aug 2024",
+      color: "border-purple-500",
       achievements: [
         "Deployed a predictive maintenance model with a team of four engineers, using LSTMs and XGBoost, analyzing 19,536 sensor logs stored using real and simulated Google Cloud Platform, to reduce false alarm failure predictions and enhance reliability",
         "Engineered data preprocessing with outlier removal and normalization on sensor logs and decreased false positive failure predictions and enhanced the model accuracy.",
@@ -31,6 +33,7 @@ const Experience = () => {
       title: "Cloud Data Engineer",
       company: "Hewlett Packard Enterprise",
       period: "Aug 2022 – Apr 2023",
+      color: "border-emerald-500",
       achievements: [
         "Led cloud migrations from VMware and on-prem to AWS for Merck Pharmaceuticals using MGN, EC2, and AWS Migration Hub, reducing operational overhead by 40%.",
         "Delivered an interactive AWS live dashboard displaying metrics from CloudWatch and cost explorer and enabled stakeholders to make well-informed scaling decisions, and reduced cloud operational costs by 25%.",
@@ -41,6 +44,7 @@ const Experience = () => {
       title: "Data Engineer Intern",
       company: "Hewlett Packard Enterprise",
       period: "Jan 2022 – Jul 2022",
+      color: "border-cyan-500",
       achievements: [
         "Gained hands-on knowledge of HPE GreenLake Management Services, VMware virtualization, and vSphere server storage architecture, enhancing skills in cloud infrastructure and enterprise product management.",
         "Developed skills in ETL pipelines, data engineering and data preprocessing techniques including data preprocessing, statistical analysis, and visualization through cross-functional collaboration."
@@ -50,6 +54,7 @@ const Experience = () => {
       title: "Business Analyst",
       company: "Forcast.ai",
       period: "Oct 2020 – Dec 2021",
+      color: "border-orange-500",
       achievements: [
         "Built time series ML models to forecast sales, reduce stockouts and excess inventory as part of business planning initiative. Optimized lead times for SKU using machine learning dashboards and to track marketing KPIs, leading to increase in 50% sales.",
         "Led A/B testing using multi-armed bandit algorithms on landing pages, email campaigns, and marketing creative campaigns, increasing conversion rates by 12% and improving ROI through effective business intelligence insights.",
@@ -58,29 +63,12 @@ const Experience = () => {
       ]
     },
     {
-      title: "Sports Analytics Agent System (Random Forest & API Orchestration)",
-      period: "Feb 2024 - May 2024",
-      achievements: [
-        "Implemented a multi-agent system using weather forecasts, athlete readiness, and facility availability, simulating 5-day decisions across 21 training venues.",
-        "Engineered a modular prediction pipeline combining real-time weather APIs with a Random Forest model with 88% accuracy to drive context-aware training decisions.",
-        "Reduced false-positive training triggers by 30% and increased cross-agent decision consistency by 40% through coordinated rule-based agent optimization and adaptive decision-making."
-      ]
-    },
-    {
-      title: "Automated Demand Forecasting and Inventory Optimization (LSTM, ARIMA and LightGBM)",
-      period: "Jul 2020 - Nov 2020",
-      achievements: [
-        "Trained ML models for financial forecasting and inventory optimization, improving accuracy by 3%.",
-        "Enhanced inventory management by creating a real-time dashboard visualizing KPIs such as inventory turnover rate and order fulfillment time, leading to a 10% improvement.",
-        "Improved forecast accuracy by coordinating multivariate time series forecasting, hyperparameter tuning and data processing."
-      ]
-    },
-    {
       title: "HR Intern",
       company: "Aasman Foundation",
       type: "Internship",
       period: "May 2021 - Sep 2021 · 5 mos",
       location: "Chennai, Tamil Nadu, India",
+      color: "border-pink-500",
       achievements: [
         "Led onboarding for new staff and volunteers, ensuring smooth transitions and alignment with organizational values.",
         "Assisted in recruitment by screening resumes, conducting interviews, and matching candidates to roles.",
@@ -94,6 +82,7 @@ const Experience = () => {
       type: "Seasonal",
       period: "Jan 2020 - Mar 2020 · 3 mos",
       location: "Chennai, Tamil Nadu, India · On-site",
+      color: "border-indigo-500",
       achievements: [
         "Developed and managed the event budget, ensuring efficient allocation of resources across various event functions.",
         "Identified, secured, and negotiated 40+ sponsorship deals, establishing strong corporate partnerships to maximize funding and event success.",
@@ -107,6 +96,7 @@ const Experience = () => {
       type: "Internship",
       period: "Feb 2019 - May 2019 · 4 mos",
       location: "Chennai, Tamil Nadu, India",
+      color: "border-teal-500",
       achievements: [
         "Led a large-scale promotional campaign, partnering with 10+ universities to attract over 1,000 students to the event and executing social media marketing strategies that increased engagement by 40%.",
         "Managed influencer partnerships and email marketing campaigns, resulting in a 30% increase in event registrations and a 25% boost in RSVP rates.",
@@ -125,7 +115,7 @@ const Experience = () => {
         
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+            <div key={index} className={`bg-white dark:bg-gray-900 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 ${exp.color}`}>
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
                 <div>
                   <h3 className="text-2xl font-medium text-gray-900 dark:text-white mb-2">{exp.title}</h3>
