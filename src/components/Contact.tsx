@@ -6,8 +6,8 @@ import { BookOpen } from 'lucide-react';
 const Contact = () => {
   const downloadResume = () => {
     const link = document.createElement('a');
-    link.href = '/lovable-uploads/6d7cc891-c38a-4218-aac7-179f452abea6.png';
-    link.download = 'Narasimha_Vardhan_Resume.pdf';
+    link.href = `${import.meta.env.BASE_URL}lovable-uploads/6d7cc891-c38a-4218-aac7-179f452abea6.png`;
+    link.download = 'Narasimha_Vardhan_Resume.png';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

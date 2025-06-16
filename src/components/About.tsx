@@ -15,7 +15,7 @@ const About = () => {
             <div className="flex flex-col items-center mb-8">
               <div className="w-48 h-48 rounded-full overflow-hidden mb-6 shadow-2xl">
                 <img 
-                  src="/lovable-uploads/15094e40-e82a-4ed0-baa2-1cd97cb3683f.png" 
+                  src={`${import.meta.env.BASE_URL}lovable-uploads/15094e40-e82a-4ed0-baa2-1cd97cb3683f.png`}
                   alt="Narasimha Vardhan Rachaputi"
                   className="w-full h-full object-cover"
                 />
