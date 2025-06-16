@@ -52,7 +52,7 @@ const Experience = () => {
     },
     {
       title: "Business Analyst",
-      company: "Forcast.ai",
+      company: "CrossCreek",
       period: "Oct 2020 – Dec 2021",
       color: "border-orange-500",
       achievements: [
@@ -107,7 +107,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gray-50 dark:bg-gray-800">
+    <section id="experience" className="py-20 px-6 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-thin text-center mb-16 text-gray-900 dark:text-white">
           Professional Experience

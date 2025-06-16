@@ -4,7 +4,7 @@ import { Mail, MapPin } from 'lucide-react';
 
 const About = () => {
   return (
-    <section className="py-20 px-6 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-20 px-6 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-thin text-center mb-16 text-gray-900 dark:text-white">
           About Me
@@ -68,7 +68,7 @@ const About = () => {
                   <div className="bg-green-100 dark:bg-green-900 p-2 rounded-full">
                     <MapPin className="w-5 h-5 text-green-600 dark:text-green-400" />
                   </div>
-                  <span className="text-gray-600 dark:text-gray-400">Tucson, AZ</span>
+                  <span className="text-gray-600 dark:text-gray-400">United States of America</span>
                 </div>
               </div>
             </div>

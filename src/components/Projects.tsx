@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Brain, Shield, Ship, Github, ExternalLink } from 'lucide-react';
+import { Brain, Shield, TrendingUp, Calendar, Github, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -11,7 +11,6 @@ const Projects = () => {
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-100 dark:bg-purple-900",
       iconColor: "text-purple-600 dark:text-purple-400",
-      image: "photo-1559757148-5c350d0d3c56",
       achievements: [
         "Addressed global mental health issues through a data-driven approach",
         "Developed and implemented a model using Random Forest classification to assess an individual's mental state, enhancing accuracy through label encoding and data analysis",
@@ -25,7 +24,6 @@ const Projects = () => {
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-100 dark:bg-blue-900",
       iconColor: "text-blue-600 dark:text-blue-400",
-      image: "photo-1550751827-4bd374c3f58b",
       achievements: [
         "Designed an automated framework to identify fake profiles on social networks",
         "Streamlined the profile verification process, improving the overall social networking experience",
@@ -33,29 +31,44 @@ const Projects = () => {
       ]
     },
     {
-      title: "Anomaly Vessel Detection",
-      subtitle: "Support Vector Regression and AIS Data",
-      icon: Ship,
+      title: "Sports Analytics Agent System",
+      subtitle: "Random Forest & API Orchestration",
+      period: "Feb 2024 - May 2024",
+      icon: TrendingUp,
       color: "from-emerald-500 to-teal-500",
       bgColor: "bg-emerald-100 dark:bg-emerald-900",
       iconColor: "text-emerald-600 dark:text-emerald-400",
-      image: "photo-1578662996442-48f60103fc96",
       achievements: [
-        "Explore macro-level port operations and micro-level ship characteristics",
-        "Utilize extensive onboard equipment data for location, navigation, and trajectory metrics",
-        "Analyze data to enhance port efficiency and optimize ship operations"
+        "Implemented a multi-agent system using weather forecasts, athlete readiness, and facility availability, simulating 5-day decisions across 3 training venues",
+        "Engineered a modular prediction pipeline combining real-time weather APIs with a Random Forest model with 88% accuracy to drive context-aware training decisions",
+        "Reduced false-positive training triggers by 30% and increased cross-agent decision consistency by 40% through coordinated rule-based orchestration and adaptive input handling"
+      ]
+    },
+    {
+      title: "Automated Demand Forecasting",
+      subtitle: "LSTM, ARIMA and LightGBM",
+      period: "Jul 2020 - Nov 2020",
+      icon: Calendar,
+      color: "from-orange-500 to-red-500",
+      bgColor: "bg-orange-100 dark:bg-orange-900",
+      iconColor: "text-orange-600 dark:text-orange-400",
+      achievements: [
+        "Trained ML models for financial forecasting and inventory optimization, improving accuracy by 3%",
+        "Enhanced inventory management by creating a real-time dashboard visualizing KPIs such as inventory turnover rate and order fulfillment time, leading to a 10% improvement",
+        "Improved model performance through feature engineering, hyperparameter tuning and data processing",
+        "Linked LightGBM with real-time dashboards to help supply chain managers optimize inventory and spot delays first"
       ]
     }
   ];
 
   return (
-    <section className="py-20 px-6 bg-white dark:bg-gray-900">
+    <section id="projects" className="py-20 px-6 bg-white dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-thin text-center mb-16 text-gray-900 dark:text-white">
           Featured Projects
         </h2>
         
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index} 
@@ -80,7 +93,10 @@ const Projects = () => {
               
               <div className="p-8">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 font-medium">{project.subtitle}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-2 font-medium">{project.subtitle}</p>
+                {project.period && (
+                  <p className="text-xs text-blue-600 dark:text-blue-400 mb-4">{project.period}</p>
+                )}
                 
                 <ul className="space-y-3">
                   {project.achievements.map((achievement, achIndex) => (
