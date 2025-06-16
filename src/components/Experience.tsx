@@ -8,8 +8,8 @@ const Experience = () => {
       title: "Teaching Assistant",
       company: "University of Arizona",
       type: "Part-time",
-      period: "Aug 2024 - Dec 2024 · 5 mos",
-      location: "Tucson, Arizona, United States · On-site",
+      period: "Aug 2024 - Dec 2024",
+      location: "Tucson, Arizona, United States",
       color: "border-blue-500",
       achievements: [
         "Collaborated with the professor to design the syllabus and prepare comprehensive lecture notes for the graduate course Special Topics in AI and Digital Media, attended by 25 students.",
@@ -19,9 +19,10 @@ const Experience = () => {
       ]
     },
     {
-      title: "AI/ML Immersive Labs",
-      company: "Tucson, United States",
+      title: "AI/ML Intern",
+      company: "Immersion Labs",
       period: "May 2024 – Aug 2024",
+      location: "Tucson, Arizona, United States",
       color: "border-purple-500",
       achievements: [
         "Deployed a predictive maintenance model with a team of four engineers, using LSTMs and XGBoost, analyzing 19,536 sensor logs stored using real and simulated Google Cloud Platform, to reduce false alarm failure predictions and enhance reliability",
@@ -33,6 +34,7 @@ const Experience = () => {
       title: "Cloud Data Engineer",
       company: "Hewlett Packard Enterprise",
       period: "Aug 2022 – Apr 2023",
+      location: "Pune, Maharashtra, India",
       color: "border-emerald-500",
       achievements: [
         "Led cloud migrations from VMware and on-prem to AWS for Merck Pharmaceuticals using MGN, EC2, and AWS Migration Hub, reducing operational overhead by 40%.",
@@ -44,6 +46,7 @@ const Experience = () => {
       title: "Data Engineer Intern",
       company: "Hewlett Packard Enterprise",
       period: "Jan 2022 – Jul 2022",
+      location: "Bengaluru, Karnataka, India",
       color: "border-cyan-500",
       achievements: [
         "Gained hands-on knowledge of HPE GreenLake Management Services, VMware virtualization, and vSphere server storage architecture, enhancing skills in cloud infrastructure and enterprise product management.",
@@ -54,6 +57,7 @@ const Experience = () => {
       title: "Business Analyst",
       company: "CrossCreek",
       period: "Oct 2020 – Dec 2021",
+      location: "Chennai, Tamil Nadu, India",
       color: "border-orange-500",
       achievements: [
         "Built time series ML models to forecast sales, reduce stockouts and excess inventory as part of business planning initiative. Optimized lead times for SKU using machine learning dashboards and to track marketing KPIs, leading to increase in 50% sales.",
@@ -66,7 +70,7 @@ const Experience = () => {
       title: "HR Intern",
       company: "Aasman Foundation",
       type: "Internship",
-      period: "May 2021 - Sep 2021 · 5 mos",
+      period: "May 2021 - Sep 2021",
       location: "Chennai, Tamil Nadu, India",
       color: "border-pink-500",
       achievements: [
@@ -80,8 +84,8 @@ const Experience = () => {
       title: "Sponsorship Executive",
       company: "SRM IST Chennai",
       type: "Seasonal",
-      period: "Jan 2020 - Mar 2020 · 3 mos",
-      location: "Chennai, Tamil Nadu, India · On-site",
+      period: "Jan 2020 - Mar 2020",
+      location: "Chennai, Tamil Nadu, India",
       color: "border-indigo-500",
       achievements: [
         "Developed and managed the event budget, ensuring efficient allocation of resources across various event functions.",
@@ -94,7 +98,7 @@ const Experience = () => {
       title: "Marketing and Finance Intern",
       company: "The Climber",
       type: "Internship",
-      period: "Feb 2019 - May 2019 · 4 mos",
+      period: "Feb 2019 - May 2019",
       location: "Chennai, Tamil Nadu, India",
       color: "border-teal-500",
       achievements: [

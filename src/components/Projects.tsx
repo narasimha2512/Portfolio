@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Brain, Shield, TrendingUp, Calendar, Github, ExternalLink } from 'lucide-react';
+import { Brain, Shield, TrendingUp, Calendar, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -81,10 +81,7 @@ const Projects = () => {
                     <project.icon className={`w-12 h-12 ${project.iconColor}`} />
                   </div>
                 </div>
-                <div className="absolute top-4 right-4 flex gap-2">
-                  <div className="bg-white bg-opacity-20 backdrop-blur-sm p-2 rounded-full hover:bg-opacity-30 transition-all cursor-pointer">
-                    <Github className="w-4 h-4 text-white" />
-                  </div>
+                <div className="absolute top-4 right-4">
                   <div className="bg-white bg-opacity-20 backdrop-blur-sm p-2 rounded-full hover:bg-opacity-30 transition-all cursor-pointer">
                     <ExternalLink className="w-4 h-4 text-white" />
                   </div>

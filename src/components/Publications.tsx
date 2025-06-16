@@ -18,7 +18,7 @@ const Publications = () => {
     },
     {
       title: "Machine Learning Aided Anomaly Detection in Maritime Vessel/Ship Navigation using AIS Data",
-      date: "November 21, 2021",
+      date: "November 2021",
       description: "This paper presents a machine learning approach to detect anomalies in maritime vessel navigation using AIS data. By analyzing vessel behavior at macro and micro levels, we identify anomalies like equipment failures or deviations in metrics such as Speed Over Ground (SOG) and Course Over Ground (COG). Using Support Vector Regression (SVR), we model vessel trajectories and flag deviations, enhancing situational awareness and maritime safety.",
       color: "from-teal-500 to-cyan-500"
     },

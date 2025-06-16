@@ -1,9 +1,18 @@
 
 import React from 'react';
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, Linkedin, Download } from 'lucide-react';
 import { BookOpen } from 'lucide-react';
 
 const Contact = () => {
+  const downloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/6d7cc891-c38a-4218-aac7-179f452abea6.png';
+    link.download = 'Narasimha_Vardhan_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="contact" className="py-20 px-6 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-4xl mx-auto text-center">
@@ -11,7 +20,7 @@ const Contact = () => {
           Let's Connect
         </h2>
         
-        <div className="flex justify-center gap-8 flex-wrap">
+        <div className="flex justify-center gap-8 flex-wrap mb-12">
           <a
             href="mailto:nvrachaputi@gmail.com"
             className="flex items-center gap-3 bg-white dark:bg-gray-900 px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group"
@@ -55,6 +64,19 @@ const Contact = () => {
             </div>
           </a>
         </div>
+
+        <button
+          onClick={downloadResume}
+          className="flex items-center gap-3 bg-white dark:bg-gray-900 px-8 py-4 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group mx-auto"
+        >
+          <div className="bg-purple-100 dark:bg-purple-900 p-3 rounded-full">
+            <Download className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+          </div>
+          <div className="text-left">
+            <p className="text-sm text-gray-500 dark:text-gray-400">Resume</p>
+            <p className="text-gray-900 dark:text-white font-medium">Download PDF</p>
+          </div>
+        </button>
       </div>
     </section>
   );
